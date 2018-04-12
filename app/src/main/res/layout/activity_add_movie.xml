@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.thejo.timer.AddMovieActivity">
+
+    <LinearLayout
+        android:id="@+id/movieTitle"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_title"/>
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/movieimdb"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imdb_number"/>
+        <EditText
+            android:id="@+id/imdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movieAdd"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/movieimdb"
+        android:onClick="addToMovieList"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
